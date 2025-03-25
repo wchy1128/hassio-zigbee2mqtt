@@ -49,4 +49,4 @@ COPY --from=dependencies_and_build /app/package.json /app/LICENSE /app/index.js 
 
 ENV NODE_ENV production
 
-ENTRYPOINT [ "/sbin/tini", "--", "/docker-entrypoint.sh"]
+ENTRYPOINT [ "/bin/bash"]
